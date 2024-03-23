@@ -29,12 +29,12 @@ public class TestScript {
             String currAction = rowData.getCell(1).toString().toLowerCase();
             if(currAction.equals("registerUser".toLowerCase())){
                 SignUpTestActions.openSiginPage(driver,"https://tutorialsninja.com/demo/index.php?route=account/register");
-                SignUpTestActions.fillDetails(driver, "Laskhya", "Kumar","temp10012345@gmail.com","7901220000","password123");
+                SignUpTestActions.fillDetails(driver, "Laskhya", "Kumar","temp10012345677@gmail.com","7901220000","password123");
             }else if(currAction.equals("logOut".toLowerCase())){
                 LogOutTestActions.logout(driver);
             }else if(currAction.equals("login".toLowerCase())){
                 LoginTestActions.openBrowser(driver,"https://tutorialsninja.com/demo/index.php?route=account/login");
-                LoginTestActions.enterUserName(driver,"temp10012345@gmail.com","//*[@id=\"input-email\"]");
+                LoginTestActions.enterUserName(driver,"temp10012345677@gmail.com","//*[@id=\"input-email\"]");
                 LoginTestActions.enterPassword(driver,"password123","//*[@id=\"input-password\"]");
                 LoginTestActions.clickLogInButton(driver,"//*[@id=\"content\"]/div/div[2]/div/form/input");
             }else if(currAction.equals("addToCart".toLowerCase())){
